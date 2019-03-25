@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Raleway');
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+
+h1, h2, h3, h4, h5, h6, button, input, textarea, select, li, a {
+    font-family: 'Fira Sans';
+}
+
+p {
+    font-family: 'Raleway';
+}

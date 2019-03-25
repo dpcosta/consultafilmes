@@ -1,0 +1,81 @@
+@import url('reset.css');
+@import url('colors.css');
+@import url('fontes.css');
+@import url('componentes.css');
+
+/* Layout */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* Logo */
+#logo {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-variant-caps: all-small-caps;
+}
+
+#logo .parte1{
+    color: #98760D;
+}
+
+#logo .parte2 {
+    color: #19176A;
+    font-weight: 700;
+}
+
+/* Cabeçalho */
+header {
+    background-color: white;
+    padding: 4px 0;
+    border-bottom: 1px solid #B29DCD;
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+}
+
+/* Main */
+main {
+    background-color: white;
+}
+
+/* Filmes */
+#filmes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+#filmes .caixa {
+    background-color: #eee;
+    border: 1px solid #98760D;
+    box-shadow: 0 3px 5px #B29DCD;
+}
+
+.generos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.generos li {
+    background-color: #98760D;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 8px;
+    background-color: #98760D;
+    color: white;
+}
