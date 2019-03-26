@@ -17,33 +17,47 @@ main {
 
 /* Logo */
 #logo {
-    font-family: 'Raleway';
-    font-size: 24px;
+    font-size: 1.5em;
     font-variant-caps: all-small-caps;
 }
 
 #logo .parte1{
-    color: #98760D;
+    color: var(--cor-fundo-media2);
 }
 
 #logo .parte2 {
-    color: #19176A;
+    color: var(--cor-fundo-media3);
     font-weight: 700;
 }
 
 /* Cabeçalho */
 header {
-    background-color: white;
+    background-color: var(--cor-fundo-clara);
     padding: 4px 0;
-    border-bottom: 1px solid #B29DCD;
+    border-bottom: 1px solid var(--cor-fundo-media4);
+    box-shadow: 0 2px 5px var(--cor-fundo-escura);
     text-align: center;
     position: fixed;
     width: 100vw;
 }
 
+/* Slides */
+.slide {
+    background-color: var(--cor-fundo-escura);
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 80%;
+}
+
 /* Main */
 main {
-    background-color: white;
+    background-color: var(--cor-fundo-clara);
 }
 
 /* Filmes */
@@ -51,31 +65,37 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding: 40px;
+    justify-content: center;
 }
 
 #filmes .caixa {
-    background-color: #eee;
-    border: 1px solid #98760D;
-    box-shadow: 0 3px 5px #B29DCD;
+    background-color: var(--cor-fundo-media4);
+    border: 1px solid var(--cor-fundo-media1);
+    /* box-shadow: 0 3px 5px var(--cor-fundo-escura); */
+    flex-basis: 300px;
 }
 
 .generos {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .generos li {
-    background-color: #98760D;
-    color: white;
+    background-color: var(--cor-fundo-media3);
+    color: var(--cor-frente-clara);
     padding: 5px;
     border-radius: 4px;
     font-size: 0.9em;
+    margin-right: 4px;
 }
 
 /* Rodapé */
 footer {
     text-align: center;
-    padding: 8px;
-    background-color: #98760D;
-    color: white;
+    padding: 20px;
+    background-color: var(--cor-fundo-escura);
+}
+
+footer p {
+    color: var(--cor-frente-clara);
 }

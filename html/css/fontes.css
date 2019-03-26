@@ -1,10 +1,34 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
 
-h1, h2, h3, h4, h5, h6, button, input, textarea, select, li, a {
-    font-family: 'Fira Sans';
+body {
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
-p {
-    font-family: 'Raleway';
+/* 
+Tamanhos de fonte 
+=================
+
+1.5     = 24px
+1.125em = 18px
+1em  = 16px
+0.75 em = 12px
+
+*/
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.125em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+p, button, input, textarea, select {
+    font-size: 0.875em;
 }
