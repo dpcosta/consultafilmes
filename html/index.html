@@ -9,22 +9,29 @@
 </head>
 <body>
     <header>
+        <button id="menuLateral">
+            <i class="fa fa-bars"></i>
+        </button>
         <h1 id="logo">
             <span class="parte1">Consulta</span><span class="parte2">Filmes</span>
         </h1>
+        <button id="formBusca">
+            <i class="fa fa-search"></i>
+        </button>
     </header>
-    <ul class="slider">
-        <li class="slide">
-            <!-- <h2 class="slide-title">De volta para o futuro</h2> -->
-            <img src="https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX400.jpg" alt="Slide 1">
-        </li>
-        <li class="slide">
-            <img src="https://m.media-amazon.com/images/M/MV5BMTk3NTc2NTI0N15BMl5BanBnXkFtZTgwMDA4MjcwNzM@._V1_SX400.jpg" alt="Slide 2">
-        </li>
-        <li class="slide">
-            <img src="https://m.media-amazon.com/images/M/MV5BNmRiZDM4ZmMtOTVjMi00YTNlLTkyNjMtMjI2OTAxNjgwMWM1XkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_SX400.jpg" alt="Slide 3">
-        </li>
-    </ul>
+    <section id="busca">
+
+        <label for="ator" id="lblAtor">Ator:</label>
+        <input type="text" name="ator" id="ator">
+        
+        <label for="genero" id="lblGenero">Gênero:</label>
+        <input type="text" name="genero" id="genero">
+        
+        <label for="ano" id="lblAno">Ano Lcto:</label>
+        <input type="number" name="ano" id="ano" min=1970 max=2019 step=1>
+        
+        <button>Pesquisar</button>
+    </section>
     <main>
         <section id="filmes">
             <article class="caixa">
@@ -152,5 +159,13 @@
     <footer>
         <p>Consulta Fimes &copy; 2019</p>
     </footer>
+    <script>
+        let btn = document.querySelector('#formBusca');
+        let sectionBusca = document.querySelector('#busca');
+        btn.addEventListener('click', ev => {
+            console.log('clicou');
+            sectionBusca.style.display = 'block';
+        });
+    </script>
 </body>
 </html>

@@ -15,6 +15,18 @@ main {
     flex-grow: 1;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Genéricos */
+input {
+    padding: 8px;
+    border: 0;
+    border-radius: 4px;
+}
+
 /* Logo */
 #logo {
     font-size: 1.5em;
@@ -32,32 +44,29 @@ main {
 
 /* Cabeçalho */
 header {
-    background-color: var(--cor-fundo-clara);
     padding: 4px 0;
+    background-color: var(--cor-fundo-clara);
     border-bottom: 1px solid var(--cor-fundo-media4);
-    box-shadow: 0 2px 5px var(--cor-fundo-escura);
-    text-align: center;
+    box-shadow: 0 1px 5px var(--cor-fundo-escura);
     position: fixed;
     width: 100vw;
+    margin: 0;
 }
 
-/* Slides */
-.slide {
-    background-color: var(--cor-fundo-escura);
-    height: 300px;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header button {
+    background-color: inherit;
+    border: 0px;
+    cursor: pointer;
 }
 
-.slide img {
-    width: 80%;
+header button#formBusca {
+    margin-right: 18px;
 }
 
 /* Main */
 main {
     background-color: var(--cor-fundo-clara);
+    margin-top: 20px;
 }
 
 /* Filmes */
@@ -98,4 +107,58 @@ footer {
 
 footer p {
     color: var(--cor-frente-clara);
+}
+
+/* Busca */
+#busca {
+    /* display: none; */
+    margin-top:  33px;
+    background-color: var(--cor-fundo-media2);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 40px;
+    grid-column-gap: 10px;
+    grid-row-gap: 8px;
+    color: var(--cor-frente-clara);
+}
+
+#busca #lblAtor {
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+#busca #ator {
+    grid-column: 1/1;
+    grid-row: 2/2;
+}
+
+#busca #lblGenero {
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+
+#busca #genero {
+    grid-column: 2/2;
+    grid-row: 2/2
+}
+
+#busca #lblAno {
+    grid-column: 3/3;
+    grid-row: 1/1;
+}
+
+#busca #ano {
+    grid-column: 3/3;
+    grid-row: 2/2;
+}
+
+#busca button {
+    grid-column: 4/4;
+    grid-row: 2/2;
+    border: 1px solid var(--cor-fundo-media2);
+    background-color: var(--cor-fundo-media3);
+    color: var(--cor-frente-clara);
+    border-radius: 4px;
+    padding: 8px;
 }

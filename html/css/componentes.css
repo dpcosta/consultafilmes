@@ -24,21 +24,3 @@
 .caixa-footer {
     margin-top: 10px;
 }
-
-/* Slider */
-.slider {
-    display: flex;
-    overflow-x: auto;
-    list-style-type: none;
-    -webkit-overflow-scrolling: touch;
-}
-
-.slide {
-    flex-shrink: 0;
-}
-
-.slide-title {
-    position: absolute;
-    left: 50px;
-    top: 50px;
-}
