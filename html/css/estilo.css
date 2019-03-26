@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
 }
 
-main {
+main, #novo-filme {
     flex-grow: 1;
 }
 
@@ -63,7 +63,7 @@ header {
     grid-row: 2/2;
 }
 
-#detalhe-filme {
+#detalhe-filme, #novo-filme {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -341,4 +341,8 @@ footer p {
 
 #tblFilmes button:hover {
     color: var(--cor-fundo-media3);
+}
+
+#novo-filme {
+    margin-top: 33px;
 }
