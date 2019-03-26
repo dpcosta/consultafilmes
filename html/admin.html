@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Consulta Filmes</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <button id="btnMenuLateral">
+            <i class="fa fa-bars"></i>
+        </button>
+        <h1 id="logo">
+            <span class="parte1">Consulta</span><span class="parte2">Filmes</span>
+        </h1>
+        <button id="btnFormBusca">
+            <i class="fa fa-search"></i>
+        </button>
+    </header>
+    <div id="menuLateral">
+        <ul>
+            <li>Filmes</li>
+            <li>Envolvidos</li>
+            <li>Gêneros</li>
+        </ul>
+    </div>
+    <form id="busca">
+
+        <label for="ator" id="lblAtor">Ator:</label>
+        <input type="text" name="ator" id="ator">
+        
+        <label for="genero" id="lblGenero">Gênero:</label>
+        <input type="text" name="genero" id="genero">
+        
+        <label for="ano" id="lblAno">Ano Lcto:</label>
+        <input type="number" name="ano" id="ano" value="2019" min=1970 max=2019 step=1>
+        
+        <button class="botao">Pesquisar</button>
+    </form>
+    <main>
+        <table id="tblFilmes">
+            <tr>
+                <th>Filme</th>
+                <th>Genêros</th>
+                <th>Envolvidos</th>
+                <th>Lançamento</th>
+                <th>Duração</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="colInfoGeral">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNjQ3NWNlNmQtMTE5ZS00MDdmLTlkZjUtZTBlM2UxMGFiMTU3XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SY150.jpg" alt="">
+                        <h2>Harry Potter and the Sorcerer's Stone</h2>
+                    </div>
+                </td>
+                <td>
+                    <ul class="colGeneros">
+                        <li>Aventura</li>
+                        <li>Fantasia</li>
+                        <li>Família</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="colEnvolvidos">
+                        <li>Daniel Radcliffe</li>
+                        <li>Emma Watson</li>
+                        <li>Rupert Grim</li>
+                        <li>Chris Columbus</li>
+                    </ul>
+                </td>
+                <td>18/11/2001</td>
+                <td>152 min.</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="colInfoGeral">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTcxODgwMDkxNV5BMl5BanBnXkFtZTYwMDk2MDg3._V1_SY150.jpg" alt="">
+                        <h2>Harry Potter and the Chamber of Secrets</h2>
+                    </div>
+                </td>
+                <td>
+                    <ul class="colGeneros">
+                        <li>Aventura</li>
+                        <li>Fantasia</li>
+                        <li>Família</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="colEnvolvidos">
+                        <li>Daniel Radcliffe</li>
+                        <li>Emma Watson</li>
+                        <li>Rupert Grim</li>
+                        <li>Chris Columbus</li>
+                    </ul>
+                </td>
+                <td>18/11/2001</td>
+                <td>152 min.</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="colInfoGeral">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMzkzNjBkOGItNGMxNC00NTNiLWI5ZGQtZmZlNTMwYWE1MGUzXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_SY150.jpg" alt="">
+                        <h2>Game of Thrones</h2>
+                    </div>
+                </td>
+                <td>
+                    <ul class="colGeneros">
+                        <li>Ação</li>
+                        <li>Drama</li>
+                        <li>Romance</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="colEnvolvidos">
+                        <li>Emilia Clarke</li>
+                        <li>Emma Watson</li>
+                        <li>Rupert Grim</li>
+                        <li>Chris Columbus</li>
+                    </ul>
+                </td>
+                <td>18/11/2001</td>
+                <td>152 min.</td>
+            </tr>
+            <!-- 
+            
+            <article class="caixa">
+                    <div class="caixa-header">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNGZiMzBkZjMtNjE3Mi00MWNlLWIyYjItYTk3MjY0Yjg5ODZkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SX300.jpg" alt="">
+                    </div>
+                    <div class="caixa-body">
+                        <h2>Avengers Endgame</h2>
+                    </div>
+                    <div class="caixa-footer">
+                        <ul class="generos">
+                            <li>Ação</li>
+                            <li>Aventura</li>
+                            <li>Fantasia</li>
+                        </ul>
+                    </div>
+            </article>
+            <article class="caixa">
+                <div class="caixa-header">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMjE4NzgzNzEwMl5BMl5BanBnXkFtZTgwMTMzMDE0NjE@._V1_SX300.jpg" alt="">
+                </div>
+                <div class="caixa-body">
+                    <h2>O Quarto de Jack</h2>
+                </div>
+                <div class="caixa-footer">
+                    <ul class="generos">
+                        <li>Drama</li>
+                        <li>Thriller</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="caixa">
+                <div class="caixa-header">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTYyMTcxNzc5M15BMl5BanBnXkFtZTgwOTg2ODE2MTI@._V1_SX300.jpg" alt="">
+                </div>
+                <div class="caixa-body">
+                    <h2>Pirates of the Caribean</h2>
+                </div>
+                <div class="caixa-footer">
+                    <ul class="generos">
+                        <li>Aventura</li>
+                        <li>Fantasia</li>
+                        <li>Ação</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="caixa">
+                <div class="caixa-header">
+                    <img src="https://m.media-amazon.com/images/M/MV5BM2JkNGU0ZGMtZjVjNS00NjgyLWEyOWYtZmRmZGQyN2IxZjA2XkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg" alt="">
+                </div>
+                <div class="caixa-body">
+                    <h2>Bourne Identity</h2>
+                </div>
+                <div class="caixa-footer">
+                    <ul class="generos">
+                        <li>Ação</li>
+                        <li>Mistério</li>
+                        <li>Drama</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="caixa">
+                    <div class="caixa-header">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDVhZmJiYWMtNmIzMC00ZWNiLTkzZDYtNGNlZmViMGM4OGExXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg" alt="">
+                    </div>
+                    <div class="caixa-body">
+                        <h2>007 Skyfall</h2>
+                    </div>
+                    <div class="caixa-footer">
+                        <ul class="generos">
+                            <li>Ação</li>
+                            <li>Aventura</li>
+                            <li>Thriller</li>
+                        </ul>
+                    </div>
+            </article> -->
+                
+        </table>
+    </main>
+    <footer>
+        <p>Consulta Fimes &copy; 2019</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+    <script src="js/site.js">
+    </script>
+</body>
+</html>

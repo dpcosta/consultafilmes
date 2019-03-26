@@ -267,3 +267,40 @@ footer p {
 #login h3, #login input {
     margin-bottom: 8px;
 }
+
+#tblFilmes {
+    width: 100%;
+    margin-top: 33px;
+}
+
+#tblFilmes td, #tblFilmes th {
+    padding: 12px;
+    border: 1px solid var(--cor-fundo-media3);
+}
+
+#tblFilmes td {
+    vertical-align: top;
+}
+
+#tblFilmes tr:nth-child(2n+1) {
+    background-color: var(--cor-fundo-media1);
+}
+
+#tblFilmes tr:nth-child(1) {
+    background-color: var(--cor-fundo-media2);
+    color: var(--cor-frente-clara);
+}
+
+#tblFilmes th {
+    text-align: left;
+    padding: 6px;
+    font-weight: 700;
+}
+
+.colInfoGeral {
+    display: flex;
+}
+
+.colGeneros, .colEnvolvidos {
+    /* vertical-align: top; */
+}
