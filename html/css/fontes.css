@@ -10,6 +10,7 @@ body {
 Tamanhos de fonte 
 =================
 
+2       = 32px;
 1.5     = 24px
 1.125em = 18px
 1em  = 16px
@@ -18,17 +19,17 @@ Tamanhos de fonte
 */
 
 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 h2 {
-    font-size: 1.125em;
+    font-size: 1.5em;
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1.125em;
 }
 
 p, button, input, textarea, select {
-    font-size: 0.875em;
+    font-size: 1em;
 }

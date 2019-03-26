@@ -1,6 +1,6 @@
 /* esquema monocromático a partir da cor determinada por --hue-principal */
 :root {
-    --hue-principal: 140; /* em angulo (hue)*/
+    --hue-principal: 45; /* em angulo (hue)*/
     --cor-frente-principal: hsl(var(--hue-principal), 100%, 20%);
     --cor-frente-escura: hsl(var(--hue-principal), 0%, 20%);
     --cor-frente-clara: hsl(var(--hue-principal), 100%, 100%);
@@ -19,8 +19,4 @@ h1, h2, h3, p {
 
 input {
     color: var(--cor-fundo-media5);
-}
-
-input:focus {
-    border: 1px solid var(--cor-fundo-media1);
 }

@@ -1,9 +1,11 @@
 /* Botão  */
 
 .botao {
+    border-radius: 4px;
     padding: 8px;
+    cursor: pointer;
+    background-color: transparent;
 }
-
 
 /* Caixa */
 .caixa {

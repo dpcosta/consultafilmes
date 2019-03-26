@@ -20,11 +20,109 @@ header {
     justify-content: space-between;
 }
 
+#busca {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 8px;
+}
+
+#busca #lblAtor {
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+#busca #ator {
+    grid-column: 1/1;
+    grid-row: 2/2;
+}
+
+#busca #lblGenero {
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+
+#busca #genero {
+    grid-column: 2/2;
+    grid-row: 2/2
+}
+
+#busca #lblAno {
+    grid-column: 3/3;
+    grid-row: 1/1;
+}
+
+#busca #ano {
+    grid-column: 3/3;
+    grid-row: 2/2;
+}
+
+#busca button {
+    grid-column: 4/4;
+    grid-row: 2/2;
+}
+
+#detalhe-filme {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+#poster {
+    grid-column: 1/1;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#info-geral {
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+
+#envolvidos {
+    grid-column: 2/2;
+    grid-row: 2/2;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #envolvidos li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+#atores ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 /* Genéricos */
 input {
-    padding: 8px;
+    padding: 4px 8px;
     border: 0;
     border-radius: 4px;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+button {
+    border: 1px solid var(--cor-fundo-escura);
+    color: var(--cor-fundo-escura);
+}
+
+button:hover {
+    background-color: var(--cor-fundo-media3);
+    color: var(--cor-frente-clara);
 }
 
 /* Logo */
@@ -44,6 +142,7 @@ input {
 
 /* Cabeçalho */
 header {
+    z-index: 99;
     padding: 4px 0;
     background-color: var(--cor-fundo-clara);
     border-bottom: 1px solid var(--cor-fundo-media4);
@@ -59,7 +158,12 @@ header button {
     cursor: pointer;
 }
 
-header button#formBusca {
+header button:hover {
+    background-color: transparent;
+    color: inherit;
+}
+
+header button#btnFormBusca {
     margin-right: 18px;
 }
 
@@ -111,54 +215,55 @@ footer p {
 
 /* Busca */
 #busca {
-    /* display: none; */
-    margin-top:  33px;
+    margin-top: 33px;
     background-color: var(--cor-fundo-media2);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
     padding: 40px;
-    grid-column-gap: 10px;
-    grid-row-gap: 8px;
     color: var(--cor-frente-clara);
+    border-bottom: 1px solid var(--cor-fundo-media3);
 }
 
-#busca #lblAtor {
-    grid-column: 1/1;
-    grid-row: 1/1;
+/* Detalhes */
+
+#detalhe-filme {
+    padding: 33px 80px;
 }
 
-#busca #ator {
-    grid-column: 1/1;
-    grid-row: 2/2;
+#info-geral button {
+    margin-top: 20px;
 }
 
-#busca #lblGenero {
-    grid-column: 2/2;
-    grid-row: 1/1;
+#titulo-filme {
+    margin: 0 0 20px 0;
 }
 
-#busca #genero {
-    grid-column: 2/2;
-    grid-row: 2/2
+#atores li {
+    margin-right: 12px;
 }
 
-#busca #lblAno {
-    grid-column: 3/3;
-    grid-row: 1/1;
+#envolvidos h2 {
+    margin-bottom: 12px;
 }
 
-#busca #ano {
-    grid-column: 3/3;
-    grid-row: 2/2;
+#sinopse {
+    font-size: 1.125em;
+    line-height: 1.15em;
+    margin: 20px 0;
 }
 
-#busca button {
-    grid-column: 4/4;
-    grid-row: 2/2;
-    border: 1px solid var(--cor-fundo-media2);
-    background-color: var(--cor-fundo-media3);
+/* Menu Lateral */
+#menuLateral {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: var(--cor-fundo-media2);
+    padding: 50px 14px;
     color: var(--cor-frente-clara);
-    border-radius: 4px;
-    padding: 8px;
+    z-index: 1;
+    border-right: 1px solid var(--cor-fundo-media3);
+}
+
+#login h3, #login input {
+    margin-bottom: 8px;
 }
